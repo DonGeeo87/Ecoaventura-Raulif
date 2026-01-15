@@ -1,8 +1,19 @@
 # Changelog
 
+
 Todas las mejoras notables y actualizaciones del proyecto "EcoAventura: Guardianes del Bosque" se documentarán en este archivo.
 
+## [1.0.1] - 2026-01-15
+
+### 🐛 Correcciones (Bug Fixes)
+- **Fix Crítico: Imágenes de Misiones**: Resuelto el bug donde todas las estaciones/misiones mostraban la misma imagen (lobo blanco genérico de Unsplash).
+  - Actualizado `constants.tsx`: Cada especie ahora usa sus rutas de imágenes correctas (`zorro_culpeo.png`, `quillay.png`, `loica.png`, `peumo.png`, `puma.png`).
+  - Configuradas las caricaturas únicas por especie (`caricature_zorro.png`, `caricature_quillay.png`, etc.).
+  - Eliminado el fallback de Unsplash en `StationOverlay.tsx` que causaba que todas las imágenes se vieran iguales cuando fallaba la carga.
+  - Implementado fallback interno: si la imagen principal falla, ahora intenta cargar la caricature de la misma especie.
+
 ## [1.0.0] - 2026-01-14
+
 
 ### 🚀 Novedades (Features)
 - **Nuevo Diseño "Light & Fresh"**: Reemplazo total de la estética oscura anterior por un diseño luminoso, limpio y premium, utilizando blancos niebla, verdes bosque y acentos naranjas.
