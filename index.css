@@ -1097,12 +1097,18 @@ h4,
 
   .overlay-header {
     padding: 1rem;
-    /* Cabecera más pequeña */
     flex-shrink: 0;
   }
 
   .station-name {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    /* Reducido de 1.5rem para evitar desbordes */
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .station-scientific {
+    font-size: 0.8rem;
   }
 
   .station-icon {
@@ -1116,13 +1122,12 @@ h4,
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /* Evitar scroll del body completo */
   }
 
   .overlay-media {
     min-height: auto;
-    height: 250px;
-    /* Altura fija reducida para la imagen */
+    height: 200px;
+    /* Reducido para dar mas espacio al contenido */
     flex-shrink: 0;
   }
 
@@ -1133,14 +1138,31 @@ h4,
   .media-caricature img {
     min-height: auto;
     height: 100%;
-    /* Forzar altura del contenedor padre */
   }
 
-  .overlay-content {
-    /* Contenedor del texto (si existe esa clase o equivalente) */
-    flex: 1;
-    overflow-y: auto;
+  .overlay-info {
     padding: 1rem;
+    gap: 1rem;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+
+  .info-card-text {
+    font-size: 0.95rem;
+    padding-right: 2rem;
+    /* Menor espacio reservado */
+    line-height: 1.4;
+  }
+
+  .info-card-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-complete-mission {
+    padding: 1rem;
+    font-size: 1.2rem;
   }
 }
 
