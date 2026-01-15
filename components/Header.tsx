@@ -57,6 +57,7 @@ const Header: React.FC<HeaderProps> = ({ currentState, onNavigate, progress = 0 
           </div>
 
 
+          {/* 
           <nav className="nav-raulif">
             <button
               onClick={() => onNavigate(GameState.EXPLORE)}
@@ -65,6 +66,7 @@ const Header: React.FC<HeaderProps> = ({ currentState, onNavigate, progress = 0 
               <span>🍃</span> <span>Descubrir</span>
             </button>
           </nav>
+          */}
         </div>
       </div>
     </header>

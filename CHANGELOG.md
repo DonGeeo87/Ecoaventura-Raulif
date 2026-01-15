@@ -3,6 +3,12 @@
 
 Todas las mejoras notables y actualizaciones del proyecto "EcoAventura: Guardianes del Bosque" se documentarán en este archivo.
 
+## [1.0.2] - 2026-01-15
+
+### 🔧 Ajustes (Maintenance)
+- **Ocultar Navegación**: Se oculta temporalmente la opción "Descubrir" en el Header.
+- **Despliegue**: Sincronización y deploy.
+
 ## [1.0.1] - 2026-01-15
 
 ### 🐛 Correcciones (Bug Fixes)
