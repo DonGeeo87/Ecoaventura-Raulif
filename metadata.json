@@ -1,0 +1,8 @@
+{
+  "name": "EcoAventura: Guardianes del Bosque Esclerófilo",
+  "description": "Una aplicación interactiva y educativa para que niños exploren el bosque esclerófilo, conozcan su fauna nativa y aprendan a proteger el medioambiente con la ayuda de un guardián IA.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
