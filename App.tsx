@@ -66,7 +66,7 @@ const App: React.FC = () => {
                 <div className="logo-glow"></div>
                 <div className="animate-float">
                   <img
-                    src="/images/logo-raulif.png"
+                    src="images/logo-raulif.png"
                     alt="Raulif"
                     className="home-logo-img"
                     onError={(e) => (e.currentTarget.src = 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80')}

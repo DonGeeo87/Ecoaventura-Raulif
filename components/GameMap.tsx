@@ -130,7 +130,7 @@ const GameMap: React.FC<GameMapProps> = ({ nodes, onSelectNode }) => {
 
       <div className="glass-card guia-box">
         <div style={{ width: '60px', height: '60px', background: '#f0f7f0', borderRadius: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px' }}>
-          <img src="/images/logo-raulif.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="Raulif" />
+          <img src="images/logo-raulif.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="Raulif" />
         </div>
         <div>
           <h4 style={{ color: 'var(--forest-green)', fontSize: '1.1rem', marginBottom: '0.2rem' }}>Guía del Guardián</h4>

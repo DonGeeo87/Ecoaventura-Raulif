@@ -61,10 +61,19 @@ const StationOverlay: React.FC<StationOverlayProps> = ({ node, onClose, onComple
                   src={node.imageUrl}
                   alt={node.name}
                   onError={(e) => {
-                    console.error('❌ Error cargando imagen:', node.imageUrl);
-                    // Intentar cargar caricature como fallback si existe
-                    if (node.caricatureUrl && e.currentTarget.src !== node.caricatureUrl) {
-                      e.currentTarget.src = node.caricatureUrl;
+                    const img = e.currentTarget;
+                    // Evitar loop infinito: solo intentar fallback UNA vez
+                    if (!img.dataset.fallbackAttempted) {
+                      console.error('❌ Error cargando imagen:', node.imageUrl);
+                      img.dataset.fallbackAttempted = 'true';
+
+                      // Intentar caricature como fallback
+                      if (node.caricatureUrl && !img.src.includes(node.caricatureUrl)) {
+                        img.src = node.caricatureUrl;
+                      } else {
+                        // Si caricature también falla, ocultar imagen
+                        img.style.display = 'none';
+                      }
                     }
                   }}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
